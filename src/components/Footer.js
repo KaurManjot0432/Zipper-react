@@ -3,12 +3,12 @@ import '../App.css';
 
 const Footer = () => {
     return (
-        <footer className="fixed-bottom">
-            <div className="center">
-                Copyright &copy; www.zipper.com. All rights reserved!
-            </div>
-        </footer>
+        
+        <div id="footer">
+            Copyright &copy; www.Zipper.com. All rights reserved! 
+        </div>
+    
     )
 }
 
-export default Footer
+export default Footer;
