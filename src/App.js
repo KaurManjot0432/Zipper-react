@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import  Navbar  from './components/Navbar';
+import Footer from './components/Footer';
+import About from './components/About';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Compress from './components/Compress';
+import Decompress from './components/Decompress';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+    <Navbar/>
+    <div className="container">
+            <Switch>
+              <Route exact path="/">
+                <Compress />
+              </Route>
+              <Route exact path="/unzip">
+                <Decompress />
+              </Route>
+              <Route exact path="/about">
+                <About />
+              </Route>
+            </Switch>
+          </div>
+    <Footer/>
+    </Router>
   );
 }
 

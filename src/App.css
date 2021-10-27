@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+
+*{
+  margin : 0;
+  padding : 0;
+}
+
+
+footer{
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 9px 20px;
+}
