@@ -1,4 +1,4 @@
-import  Navbar  from './components/Navbar';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import About from './components/About';
 import {
@@ -13,21 +13,21 @@ import Decompress from './components/Decompress';
 function App() {
   return (
     <Router>
-    <Navbar/>
-    <div className="container">
-            <Switch>
-              <Route exact path="/">
-                <Compress />
-              </Route>
-              <Route exact path="/unzip">
-                <Decompress />
-              </Route>
-              <Route exact path="/about">
-                <About />
-              </Route>
-            </Switch>
-          </div>
-    <Footer/>
+      <Navbar />
+      <div className="container">
+        <Switch>
+          <Route exact path="/">
+            <Compress />
+          </Route>
+          <Route exact path="/unzip">
+            <Decompress />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+        </Switch>
+      </div>
+      <Footer />
     </Router>
   );
 }

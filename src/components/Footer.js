@@ -3,8 +3,8 @@ import '../App.css';
 
 const Footer = () => {
     return (
-        <footer class="fixed-bottom">
-            <div class="center">
+        <footer className="fixed-bottom">
+            <div className="center">
                 Copyright &copy; www.zipper.com. All rights reserved!
             </div>
         </footer>
