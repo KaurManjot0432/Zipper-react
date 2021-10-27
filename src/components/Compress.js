@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ArchiveFormats from './ArchiveFormats';
-import { useState } from 'react';
 import { saveAs } from 'file-saver';
 import logo from '../upload.png';
 import '../App.css';
 
-const Compress = () => {
+const Compress = (props) => {
     const [file, setfile] = useState({ selectedFile: null });
 
 
@@ -14,7 +13,7 @@ const Compress = () => {
     }
 
     //Function to zip the uploaded file
-    const ZipMeUp = async () => {
+    const ZipMeUp =  () => {
 
         const zip = require('jszip')();
 
@@ -31,6 +30,7 @@ const Compress = () => {
                 },
             })
             .then(content => {
+                props.showAlert("Zipped file will be downloaded soon!","success");
                 saveAs(content, 'file.zip');
             });
 
@@ -54,7 +54,7 @@ const Compress = () => {
     };
 
     return (
-     <>
+        <>
             <div className="card my-3">
                 <div className="card-body">
                     <h5 className="card-title mx-4">Zip File Online</h5>
