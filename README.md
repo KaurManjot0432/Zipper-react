@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Zipper-react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An amazing and free zip and unzip online file compression tool that lets you zip files into an archive. 
 
-## Available Scripts
+The app is a React.js based web application.
 
-In the project directory, you can run:
+## Features Implemented
 
-### `npm start`
+Zip your files online.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+It also supports unzip, allowing you to uncompress archived zip files. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Zipper DOES NOT have file size restrictions.
 
-### `npm test`
+It does not require you to upload / download files to a server.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+It runs locally as a browser app, thus making it much quicker than other similar zip and unzip online tools. 
 
-### `npm run build`
+This also ensures your privacy will be protected as no file data will leave your browser.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow the steps below to run the project.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the Repository:
 
-### `npm run eject`
+```bash
+git clone git@github.com:KaurManjot0432/Zipper-react.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Install the node modules
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Run the server using the command line simply using,
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+Run the application on http://localhost:3000/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Functionalities
 
-### Code Splitting
+### Making zip files
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. To select the file, which you want to zip,  Click "Compress" on Navbar.
 
-### Analyzing the Bundle Size
+2. click on upload button to open the file chooser.It will start the file extraction and list the contents of the selected file once complete.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Alt text](/public/ss2.png?raw=true "Optional Title")
 
-### Making a Progressive Web App
+3. click on zip the file  button and zipped file be downloaded automatically.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Alt text](/public/ss3.png?raw=true "Optional Title")
 
-### Advanced Configuration
+### Unzip a zip file
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. To select the file, which you want to unzip,  Click "Decompress" on Navbar.
 
-### Deployment
+2. click on upload button to open the file chooser.It will start the file extraction and list the contents of the selected file once complete.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Alt text](/public/ss4.png?raw=true "Optional Title")
 
-### `npm run build` fails to minify
+3. click on zip the file  button and zipped file be downloaded automatically.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Alt text](/public/ss5.png?raw=true "Optional Title")
+
+### About Page
+
+Here You can read about our web app and its usage.
+
+![Alt text](/public/ss6.png?raw=true "Optional Title")
+
+
