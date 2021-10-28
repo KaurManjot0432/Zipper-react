@@ -10,7 +10,7 @@ const Decompress = (props) => {
     const onFileChange = (e) => {
         setfile({ selectedFile: e.target.files[0] });
     }
-    //Function to zip the uploaded file
+    //Function to unzip the uploaded file
     const unzip = () => {
         var jsZip = require('jszip')
         let FileUploaded = file.selectedFile;
@@ -18,16 +18,18 @@ const Decompress = (props) => {
         if (FileUploaded.type !== 'application/zip') {
             props.showAlert("Selected File is not a zip file!", "danger");
         } else {
+            //it runs only if uploaded file is a zip file
             jsZip.loadAsync(FileUploaded).then(function (zip) {
                 Object.keys(zip.files).forEach(function (filename) {
                     zip.files[filename].async('nodebuffer').then(function (fileData) {
                         // console.log(fileData) // These are your file contents  
-                        console.log(zip.files[filename].name);
+                        // console.log(zip.files[filename].name);
                         const blob = new Blob([fileData], { type: "text/plain" });
                         const url = URL.createObjectURL(blob);
                         const link = document.createElement('a');
                         link.download = zip.files[filename].name;
                         link.href = url;
+                        //shows alert about file download
                         props.showAlert("Unzipped file will be downloaded soon!", "success");
                         link.click();
                     })

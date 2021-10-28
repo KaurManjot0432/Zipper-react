@@ -12,7 +12,10 @@ import Decompress from './components/Decompress';
 import Alert from './components/Alert';
 
 function App() {
+  
   const [alert, setAlert] = useState(null);
+
+  //Function to set Alert for 2000 seconds and will pass this function to other components as props
   const showAlert = (message, type) => {
     setAlert({
       msg: message,
@@ -22,6 +25,8 @@ function App() {
       setAlert(null);
     }, 2000);
   }
+
+  
   return (
     <Router>
       <Navbar />

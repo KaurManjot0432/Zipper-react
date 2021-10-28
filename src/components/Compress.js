@@ -30,7 +30,9 @@ const Compress = (props) => {
                 },
             })
             .then(content => {
+                //Shows alert message
                 props.showAlert("Zipped file will be downloaded soon!","success");
+                //Downloads the zipped file
                 saveAs(content, 'file.zip');
             });
 
@@ -70,5 +72,5 @@ const Compress = (props) => {
         </>
     )
 }
-// 
+
 export default Compress;
